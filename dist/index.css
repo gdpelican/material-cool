@@ -8,7 +8,7 @@ img { max-width: 100%; }
 
 .mdl-layout__header {
   position: relative;
-  disprgb(68,138,255)lay: block;
+  display: block;
 }
 
 .mdl-layout__header-title {
@@ -60,7 +60,7 @@ img { max-width: 100%; }
 
 .mdl-dialog__actions {
   justify-content: space-between;
-  padding: 20px 24px 24px;
+  padding: 20px;
   min-height: 36px;
 }
 
@@ -136,12 +136,6 @@ img { max-width: 100%; }
 .mdl-dialog__title {
   white-space: nowrap;
   padding: 8px 24px;
-  background: rgb(68,138,255);
-}
-
-.mdl-dialog__title h4 {
-  margin: 10px 0;
-  color: white;
 }
 
 .mdl-dialog__content {
@@ -149,17 +143,55 @@ img { max-width: 100%; }
   overflow: auto;
 }
 
-.mdl-dialog__content img {
-  max-width: 300px;
-}
-
 .mdl-dialog.open {
   opacity: 1;
-  min-width: 90%;
-  max-width: 90%;
+  padding: 0;
+  min-width: 80%;
+  max-width: 80%;
   min-height: 90%;
   max-height: 90%;
-  padding: 0;
   overflow: hidden;
   pointer-events: all;
+}
+
+.mdl-dialog__image {
+  max-width: 300px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.mdl-tabs {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.mdl-tabs__tab-bar {
+  padding: 0 10px;
+  min-height: 48px;
+  background: rgb(68,138,255);
+  color: white;
+}
+
+.mdl-tabs__panel {
+  overflow: auto;
+  flex-grow: 1;
+}
+
+.mdl-tabs__tab {
+  white-space: nowrap;
+  color: white;
+}
+
+.mdl-list__item i {
+  margin-right: 10px;
+}
+
+.mdl-tabs__tab.is-active { color: white !important; }
+.mdl-tabs__tab.is-active:after { background: white !important; }
+
+.mdl-tabs__panel { padding: 20px; }
+.mdl-tabs__panel.is-active {
+  display: flex !important;
+  flex-direction: column;
 }

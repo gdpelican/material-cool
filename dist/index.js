@@ -1,17 +1,21 @@
-var toggles = document.querySelectorAll('a[for], button[for]');
-var closes  = document.querySelectorAll('.close');
+var dialog  = document.querySelector('dialog');
+var toggles = document.querySelectorAll(".mdl-button--show-dialog");
 
 for (var i = 0; i < toggles.length; ++i) {
   toggles[i].addEventListener('click', function() {
-    if (document.querySelector('dialog.open')) {
-      document.querySelector('dialog.open').classList.remove('open');
+    var thisFor = this.getAttribute('for');
+    var actives = document.querySelectorAll('.is-active');
+
+    for(var j = 0; j < actives.length; j++) {
+      actives[j].classList.remove('is-active');
     }
-    document.getElementById(this.getAttribute('for')).classList.add('open');
-  });
+
+    dialog.classList.add('open')
+    dialog.querySelector('a[target=' + thisFor + ']').classList.add('is-active');
+    document.getElementById(thisFor).classList.add('is-active');
+  })
 }
 
-for (var i = 0; i < closes.length; ++i) {
-  closes[i].addEventListener('click', function() {
-    document.querySelector('dialog.open').classList.remove('open');
-  });
-}
+dialog.querySelector('.close').addEventListener('click', function() {
+  dialog.classList.remove('open')
+});
