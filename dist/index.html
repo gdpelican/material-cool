@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to Material Design</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.brown-blue.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+
+    <div class="mdl-layout mdl-js-layout">
+      <header class="mdl-layout__header mdl-layout__header--transparent">
+        <div class="mdl-layout__header-row">
+          <!-- Add spacer, to align navigation to the right -->
+          <div class="mdl-layout-spacer"></div>
+          <!-- Navigation -->
+          <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" for="whatis">What is?</a>
+            <a class="mdl-navigation__link" for="tenets">Tenets</a>
+            <a class="mdl-navigation__link" for="spec">Spec</a>
+            <a class="mdl-navigation__link" for="getstarted">Get Started</a>
+            <a class="mdl-navigation__link" for="reading">More stuff</a>
+            <a class="mdl-navigation__link" for="qa">Q & A</a>
+          </nav>
+        </div>
+        <div class="mdl-layout__header-title">
+          <h1>Welcome to Material Design</h1>
+        </div>
+        <button id="fab" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+          <i class="material-icons">add</i>
+        </button>
+      </header>
+
+      <!-- fab menu -->
+      <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="fab">
+        <li class="mdl-menu__item">
+          <a for="whatis">What is Material?</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a for="tenets">Core Tenets</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a for="spec">The Spec</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a for="getstarted">Get started</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a for="reading">More stuff</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a for="qa">Q & A?</a>
+        </li>
+      </ul>
+
+      <!-- sidebar drawer -->
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Table of Contents</span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" for="whatis">What is Material?</a>
+          <a class="mdl-navigation__link" for="tenets">Core Tenets</a>
+          <a class="mdl-navigation__link" for="spec">The Spec</a>
+          <a class="mdl-navigation__link" for="getstarted">Get started</a>
+          <a class="mdl-navigation__link" for="reading">More stuff</a>
+          <a class="mdl-navigation__link" for="qa">Q & A?</a>
+        </nav>
+      </div>
+      <main class="mdl-layout__content">
+
+        <!-- What is material? -->
+        <div class="mdl-card__wrapper">
+          <div class="mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title mdl-card--expand">
+              <h2 class="mdl-card__title-text">What is Material?</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+              What makes another design framework a good idea?
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" for="whatis">
+                Learn more
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Core tenets -->
+        <div class="mdl-card__wrapper">
+          <div class="mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title mdl-card--expand">
+              <h2 class="mdl-card__title-text">Core Tenets</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+              What is the framework of thinking behind it?
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" for="tenets">
+                Learn more
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- The Material Design spec -->
+        <div class="mdl-card__wrapper">
+          <div class="mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title mdl-card--expand">
+              <h2 class="mdl-card__title-text">The Spec</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+              Where can I go when I need help?
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" for="spec">
+                Learn more
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- How to get started -->
+        <div class="mdl-card__wrapper">
+          <div class="mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title mdl-card--expand">
+              <h2 class="mdl-card__title-text">Getting started</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+              Alright, I'm ready to start using it! Where to next?
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" for="getstarted">
+                Learn more
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- More stuff to read -->
+        <div class="mdl-card__wrapper">
+          <div class="mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title mdl-card--expand">
+              <h2 class="mdl-card__title-text">More stuff to read</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+              What do other people think about this thing? Where can I learn more?
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" for="reading">
+                Learn more
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q & A -->
+        <div class="mdl-card__wrapper">
+          <div class="mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title mdl-card--expand">
+              <h2 class="mdl-card__title-text">Q & A</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+              Anything more I can share?
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" for="qa">
+                Learn more
+              </a>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div class="mdl-dialog__container">
+      <dialog id="whatis" class="mdl-dialog">
+        <div class="mdl-dialog__title">
+          <h4>What is Material?</h4>
+        </div>
+        <div class="mdl-dialog__content">
+          <p>
+            Allowing us to collect data will let us get you the information you want faster.
+          </p>
+        </div>
+        <div class="mdl-dialog__actions">
+          <button type="button" class="mdl-button mdl-button--raised mdl-button--accent" for="tenets">Next</button>
+          <button type="button" class="mdl-button mdl-button--colored close">Cancel</button>
+        </div>
+      </dialog>
+
+      <dialog id="tenets" class="mdl-dialog">
+        <div class="mdl-dialog__title">
+          <h4>Core tenets of material?</h4>
+        </div>
+        <div class="mdl-dialog__content">
+          <p>
+            Allowing us to collect data will let us get you the information you want faster.
+          </p>
+        </div>
+        <div class="mdl-dialog__actions">
+          <button type="button" class="mdl-button mdl-button--raised mdl-button--accent" for="spec">Next</button>
+          <button type="button" class="mdl-button mdl-button--colored close">Cancel</button>
+        </div>
+      </dialog>
+
+      <dialog id="spec" class="mdl-dialog">
+        <div class="mdl-dialog__title">
+          <h4>The Material Design Spec</h4>
+        </div>
+        <div class="mdl-dialog__content">
+          <p>
+            Allowing us to collect data will let us get you the information you want faster.
+          </p>
+        </div>
+        <div class="mdl-dialog__actions">
+          <button type="button" class="mdl-button mdl-button--raised mdl-button--accent" for="getstarted">Next</button>
+          <button type="button" class="mdl-button mdl-button--colored close">Cancel</button>
+        </div>
+      </dialog>
+
+      <dialog id="getstarted" class="mdl-dialog">
+        <div class="mdl-dialog__title">
+          <h4>How to get started</h4>
+        </div>
+        <div class="mdl-dialog__content">
+          <p>
+            Allowing us to collect data will let us get you the information you want faster.
+          </p>
+        </div>
+        <div class="mdl-dialog__actions">
+          <button type="button" class="mdl-button mdl-button--raised mdl-button--accent" for="reading">Next</button>
+          <button type="button" class="mdl-button mdl-button--colored close">Cancel</button>
+        </div>
+      </dialog>
+
+      <dialog id="reading" class="mdl-dialog">
+        <div class="mdl-dialog__title">
+          <h4>Further Reading</h4>
+        </div>
+        <div class="mdl-dialog__content">
+          <p>
+            Some of the better resources I stumbled upon while researching; if you're feeling enterprising, send me a PR
+          </p>
+          <ul>
+            <li><a href="https://material.io/guidelines/material-design/introduction.html">The Material Design Spec</a></li>
+            <li><a href="https://medium.com/@danhollick/material-design-is-design-science-6c99c1d76498">Dan Hollick on Material Design</a></li>
+            <li><a href="https://medium.com/google-design/how-google-designers-adapt-material-e2818ad09d7d">Using Material on Inbox</a></li>
+            <li><a href="https://www.theverge.com/2014/6/27/5849272/material-world-how-google-discovered-what-software-is-made-of">What is software made of?</a></li>
+            <li><a href="https://www.interaction-design.org/literature/article/skeuomorphism-is-dead-long-live-skeuomorphism">Skeumorphism is Dead</a></li>
+            <li><a href="https://www.and.co/">That flat design we picked apart</a></li>
+            <li><a href="https://www.github.com/gdpelican/material-cool">The source code for this site</a></li>
+          </ul>
+        </div>
+        <div class="mdl-dialog__actions">
+          <button type="button" class="mdl-button mdl-button--raised mdl-button--accent" for="qa">Next</button>
+          <button type="button" class="mdl-button mdl-button--colored close">Cancel</button>
+        </div>
+      </dialog>
+
+      <dialog id="qa" class="mdl-dialog">
+        <div class="mdl-dialog__title">
+          <h4>Questions?</h4>
+        </div>
+        <div class="mdl-dialog__content">
+          <img src="https://i.jeded.com/i/ask-me-anything.33719.jpg" />
+        </div>
+        <div class="mdl-dialog__actions">
+          <div></div>
+          <button type="button" class="mdl-button mdl-button--colored close">Cancel</button>
+        </div>
+      </dialog>
+    </div>
+  </body>
+</html>
