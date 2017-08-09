@@ -1,1 +1,3 @@
-scp -r ./dist root@material.cool:/var/www/material.cool
+cd dist
+scp -r ./ root@104.236.117.96:/var/www/material.cool
+cd ../

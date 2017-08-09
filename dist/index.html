@@ -13,7 +13,8 @@
   <body>
 
     <div class="mdl-layout mdl-js-layout">
-      <header class="mdl-layout__header mdl-layout__header--transparent">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-overlay"></div>
         <div class="mdl-layout__header-row">
           <!-- Add spacer, to align navigation to the right -->
           <div class="mdl-layout-spacer"></div>
@@ -22,7 +23,8 @@
             <a class="mdl-navigation__link mdl-button--show-dialog" for="whatis">What is?</a>
             <a class="mdl-navigation__link mdl-button--show-dialog" for="tenets">Tenets</a>
             <a class="mdl-navigation__link mdl-button--show-dialog" for="spec">Spec</a>
-            <a class="mdl-navigation__link mdl-button--show-dialog" for="getstarted"><span>Get Started</span></a>
+            <a class="mdl-navigation__link mdl-button--show-dialog" for="case">Case Study</a>
+            <a class="mdl-navigation__link mdl-button--show-dialog" for="getstarted">Get Started</a>
             <a class="mdl-navigation__link mdl-button--show-dialog" for="reading">More stuff</a>
             <a class="mdl-navigation__link mdl-button--show-dialog" for="qa">Q&A</a>
           </nav>
@@ -47,6 +49,9 @@
           <a class="mdl-button--show-dialog" for="spec">The Spec</a>
         </li>
         <li class="mdl-menu__item">
+          <a class="mdl-button--show-dialog" for="case">Case Study</a>
+        </li>
+        <li class="mdl-menu__item">
           <a class="mdl-button--show-dialog" for="getstarted">Get started</a>
         </li>
         <li class="mdl-menu__item">
@@ -64,6 +69,7 @@
           <a class="mdl-navigation__link mdl-button--show-dialog" for="whatis">What is Material?</a>
           <a class="mdl-navigation__link mdl-button--show-dialog" for="tenets">Core Tenets</a>
           <a class="mdl-navigation__link mdl-button--show-dialog" for="spec">The Spec</a>
+          <a class="mdl-navigation__link mdl-button--show-dialog" for="case">Case Study</a>
           <a class="mdl-navigation__link mdl-button--show-dialog" for="getstarted">Get started</a>
           <a class="mdl-navigation__link mdl-button--show-dialog" for="reading">More stuff</a>
           <a class="mdl-navigation__link mdl-button--show-dialog" for="qa">Q & A?</a>
@@ -116,6 +122,23 @@
             </div>
             <div class="mdl-card__actions mdl-card--border">
               <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--show-dialog" for="spec">
+                Learn more
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Evolution from flat design -->
+        <div class="mdl-card__wrapper">
+          <div class="mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title mdl-card--expand">
+              <h2 class="mdl-card__title-text">Case Study</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+              Why is Material better than what came before it?
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--show-dialog" for="case">
                 Learn more
               </a>
             </div>
@@ -182,6 +205,7 @@
             <a target="whatis" href="#whatis" class="mdl-tabs__tab is-active">Intro</a>
             <a target="tenets" href="#tenets" class="mdl-tabs__tab">Tenets</a>
             <a target="spec" href="#spec" class="mdl-tabs__tab">Spec</a>
+            <a target="case" href="#case" class="mdl-tabs__tab">Case Study</a>
             <a target="getstarted" href="#getstarted" class="mdl-tabs__tab">Get started</a>
             <a target="reading" href="#reading" class="mdl-tabs__tab">More Reading</a>
             <a target="qa" href="#qa" class="mdl-tabs__tab">Q & A</a>
@@ -194,21 +218,171 @@
           </div>
 
           <div id="tenets" class="mdl-tabs__panel">
-            <p>
-              Allowing us to collect data will let us get you the information you want faster.
-            </p>
+            <i>Material design operates on three main tenets, which inform all decisions made in the spec. They are:</i>
+            <ul class="mdl-list">
+              <li class="mdl-list__item">
+                <div>
+                  <h5>Material is the metaphor</h5>
+                  <p>
+                    The primary question when exploring Material design was, "What do we, as humans, intuitively think the web is made of?"
+                    The windows and boxes and divs and modals flying around the web... what kind of thing are they constructed with?
+                  </p>
+                  <p>
+                    Google's answer to this, is the 'Material' referred to in Material design.
+                    This Material is a bit magic, but also a bit constrained by its surroundings. It has properties, abilities, and limitations, just like any other material.
+                  </p>
+                  <p>
+                    I won't go into all of the properties now (I'm going to encourage you to read the spec soon :) ),
+                    but the closest corollary in the real world is "Magical, Rigid Paper"
+                  </p>
+                  <p>
+                    It travels though space, accelerates, and casts shadows much like objects in the real world.
+                    Unlike objects in the real world, it can change size and shape effortlessly, divide, and rejoin with itself.
+                  </p>
+                  <p>
+                    Material appeals to our <i>intuition</i> as users; things behave the way they do because it
+                    <i>feels</i> like the way the web should work (which rests about halfway between familiar and magic)
+                  </p>
+                </div>
+              </li>
+              <li class="mdl-list__item">
+                <div>
+                  <h5>Choices are Bold, Graphic, and Intentional</h5>
+                  <p>Material operates under the assumption that the user has no time to appreciate subtlety.</p>
+                  <p>This means that we are aggressive in suggesting what to do next, and strive for simplicity and impression with our designs</p>
+                  <p>
+                    Material emphasizes minimalism in color choices, typography, and layout, and encourages
+                    large font sizes, impressive imagery, and sweeping movement to indicate hierarchy and activity.
+                  </p>
+                  <p>
+                    Within material design, simple and loud is the way to be.
+                  </p>
+                </div>
+              </li>
+              <li class="mdl-list__item">
+                <div>
+                  <h5>Motion provides meaning</h5>
+                  <p>
+                    Part of having a bold, intentional approach to design is to give the user
+                    a sense of power and feedback. A really great way to do this is to have
+                    the interface react to the user.
+                  </p>
+                  <p>
+                    In Material, the user performing an action will have some effect on the interface.
+                    Clicking, dragging, moving objects, filling in forms... all have some form of
+                    tactile-feeling feedback, which keeps the user engaged and informed about what's going on at all times.
+                  </p>
+                  <p>
+                    Animation's often an overlooked part of design, but in Material it's a first-class citizen.
+                  </p>
+                </div>
+              </li>
+            </ul>
           </div>
 
           <div id="spec" class="mdl-tabs__panel">
+            <i>Let's take a super brief tour through the Material design spec, the specification used to lay out how
+              different libraries should implement Material design.</i>
+            <div class="mdl-dialog__image">
+              <a href="https://material.io/guidelines/material-design/introduction.html">
+                <img src="https://storage.googleapis.com/material-design/publish/material_v_11/assets/0Bx4BSt6jniD7Y1huOXVQdlFPMmM/materialdesign_introduction.png" />
+              </a>
+            </div>
             <p>
-              Allowing us to collect data will let us get you the information you want faster.
+              The <a href="https://material.io/guidelines/material-design/introduction.html">material design spec</a> is one of the better pieces of documentation I've ever seen.
+              If you have any interest in anything I say during this talk, do yourself a favor and spend
+              an hour or two thumbing through this page; it'll make you a better designer whether you use Material or not
             </p>
           </div>
 
-          <div id="getstarted" class="mdl-tabs__panel">
+          <div id="case" class="mdl-tabs__panel">
+            <i>Let's take a look at an existing flat design, and see how material could attempt to improve on it.</i>
+            <div class="mdl-dialog__image">
+              <a href="https://and.co"><img src="images/andco.png" /></a>
+            </div>
             <p>
-              Allowing us to collect data will let us get you the information you want faster.
+              This is <a href="https://www.andco.com">andco</a>! It was an honourable mention for the <a href="https://www.awwwards.com/sites/and-co">Awwwards</a> in the Flat Design category last month.
+              It's a great design! But there are some things that might be improved by applying some material design thinking.
             </p>
+            <p class="no-padding">Remember, our three core tenets are:</p>
+            <ul class="mdl-list">
+              <li class="mdl-list__item">
+                <i class="material-icons">thumb_up</i>
+                <span>Material is the metaphor</span>
+              </li>
+              <li class="mdl-list__item">
+                <i class="material-icons">thumb_up</i>
+                <span>Choices should be Bold, Graphic, and Intentional</span>
+              </li>
+              <li class="mdl-list__item">
+                <i class="material-icons">thumb_up</i>
+                <span>Motion provides meaning</span>
+              </li>
+            </ul>
+          </div>
+
+          <div id="getstarted" class="mdl-tabs__panel">
+            <i>If you want to start using Material in your projects today, there are several options:</i>
+            <ul class="mdl-list">
+              <li class="mdl-list__item">
+                <div>
+                  <h5>
+                    <img class="mdl-list__item-logo" src="https://material.angularjs.org/latest/img/icons/angular-logo.svg" />
+                    <a href="https://material.angularjs.org/latest/">Angular Material</a>
+                    <span>(Angular)</span>
+                  </h5>
+                  <p>Provides an extensive set of directive for use with Google's angular framework.</p>
+                  <p>I use this at work! It's.... good not great.</p>
+                  <p>Currently in a bit of an awkward state, with 2.0 support in beta, and 1.0 in 'we don't fix anything' mode.</p>
+                </div>
+              </li>
+              <li class="mdl-list__item">
+                <div>
+                  <h5>
+                    <img class="mdl-list__item-logo flat" src="https://www.polymer-project.org/images/logos/p-logo.png" />
+                    <a href="https://www.polymer-project.org/">Polymer</a>
+                    <span>(Web Components)</span>
+                  </h5>
+                  <p>Google's JS implementation of Material, used for creating Web Components</p>
+                  <p>(Web components are kinda like directives in angular, without the framework. They let you build web elements which do powerful things)</p>
+                </div>
+              </li>
+              <li class="mdl-list__item">
+                <div>
+                  <h5>
+                    <img class="mdl-list__item-logo" src="https://cdn.worldvectorlogo.com/logos/react.svg" />
+                    <a href="http://www.material-ui.com/">Material UI</a>
+                    <span>(React)</span>
+                  </h5>
+                  <p>A set of React components implementing Material elements</p>
+                  <p>I've never used this, but I've also never heard a complaint from someone who has, which feels <i>quite</i> rare.</p>
+                  <p>It appears to have excellent support and a great community around it; If you're using React, give it a go!</p>
+                </div>
+              </li>
+              <li class="mdl-list__item">
+                <div>
+                  <h5>
+                    <img class="mdl-list__item-logo" src="http://materializecss.com/res/materialize.svg" />
+                    <a href="http://materializecss.com/">Materialize</a>
+                    <span>(Web)</span>
+                  </h5>
+                  <p>A generalized css/js framework supported by a team of students at Carnegie Mellon</p>
+                  <p>Has a marketplace of paid themes with support (if you <i>really</i> don't want to get your hands dirty)</p>
+                </div>
+              </li>
+              <li class="mdl-list__item">
+                <div>
+                  <h5>
+                    <img class="mdl-list__item-logo" src="http://i.imgur.com/ziuBMkf.png" />
+                    <a href="https://getmdl.io/">Material Design Lite</a>
+                    <span>(Web)</span>
+                  </h5>
+                  <p>A minimalist (26kB) version of material; <a href="https://www.github.com/gdpelican/material-cool">This site</a> is built with it!</p>
+                  <p>In my experience, does a pretty great job at getting something up and going quickly; However, lacks some of the more sophisticated elements like animations and proper dialog support.</p>
+                  <p>Might be a good thing to think of next time you're reaching for Bootstrap for something quick 'n dirty.</p>
+                </div>
+              </li>
+            </ul>
           </div>
 
           <div id="reading" class="mdl-tabs__panel">
@@ -269,7 +443,7 @@
 
           <div id="qa" class="mdl-tabs__panel">
             <div class="mdl-dialog__image">
-              <img src="https://i.jeded.com/i/ask-me-anything.33719.jpg" />
+              <img src="http://s2.quickmeme.com/img/f3/f3551cc5bf51cb1bfccb64640d88a2da91113c48f206df29c52d41e3539e7aca.jpg" />
             </div>
           </div>
 
